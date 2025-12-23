@@ -1,36 +1,28 @@
 # Student Management System
 
-A simple and modern desktop application to manage student records.
+A simple web-based application to manage student records using Streamlit.
 
 ## Features
-- Add New Student
-- View All Students
-- Search Student by Name
-- Update Student Details
-- Delete Student
-- Auto-Save Data (JSON)
-- Modern Dark Mode Interface
+- Add New Student via Sidebar
+- View interactive Student Table
+- Search by Name
+- Update or Delete records easily
+- Auto-saves to `students.json`
 
 ## Requirements
 - Python 3.x
-- customtkinter
+- streamlit
+- pandas
 
-## How to Install
-1. Open your terminal or command prompt.
-2. Install the required library:
-   pip install customtkinter
+## Installation
+1. Install requirements:
+   pip install streamlit pandas
 
 ## How to Run
-1. Open the folder in your terminal.
-2. Run the application:
-   python gui_app.py
+1. Run the app:
+   streamlit run app.py
 
-## Usage
-- The left sidebar is for data entry.
-- The main table shows the list of students.
-- Click on a row in the table to auto-fill the form for easy updating or deleting.
-- Use the Search bar at the top to filter students by name.
-- Click "Save & Exit" to close the app and save your data.
+2. The application will open automatically in your web browser.
 
 ## Note
-Data is stored locally in `students.json`. Do not modify this file manually to avoid errors.
+Data is persisted in `students.json`.
